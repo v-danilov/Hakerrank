@@ -1,12 +1,11 @@
 package com.hakerrank.Advances.PrimeChecker;
-import java.math.BigInteger;
 
-import static java.lang.System.in;
+import java.math.BigInteger;
 
 public class Solution {
 
-    class Prime{
-        void checkPrime(int ... numbers){
+    class Prime {
+        void checkPrime(int... numbers) {
             for (int num : numbers) {
                 if (check(num)) {
                     System.out.print(num + " ");
@@ -15,8 +14,8 @@ public class Solution {
             System.out.println();
         }
 
-        boolean check(int n){
-            BigInteger bi = BigInteger.valueOf((long)n);
+        boolean check(int n) {
+            BigInteger bi = BigInteger.valueOf((long) n);
             return bi.isProbablePrime(10);
         }
     }

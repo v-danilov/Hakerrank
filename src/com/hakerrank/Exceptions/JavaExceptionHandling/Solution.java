@@ -1,23 +1,19 @@
 package com.hakerrank.Exceptions.JavaExceptionHandling;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Solution {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        try{
+        try {
             int x = sc.nextInt();
             int y = sc.nextInt();
-            System.out.println(""+(x/y));
-        }catch (InputMismatchException e){
+            System.out.println("" + (x / y));
+        } catch (InputMismatchException e) {
             System.out.println("java.util.InputMismatchException");
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             System.out.println("java.lang.ArithmeticException: / by zero");
         }
     }

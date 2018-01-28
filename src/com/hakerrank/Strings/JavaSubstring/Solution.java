@@ -1,10 +1,6 @@
 package com.hakerrank.Strings.JavaSubstring;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -13,6 +9,6 @@ public class Solution {
         String S = in.next();
         int start = in.nextInt();
         int end = in.nextInt();
-        System.out.println(S.substring(start,end));
+        System.out.println(S.substring(start, end));
     }
 }

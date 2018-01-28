@@ -1,10 +1,9 @@
 package com.hakerrank.Introduction.JavaLoops2;
 
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Solution{
-    public static void main(String []argh){
+class Solution {
+    public static void main(String[] argh) {
         Scanner scan = new Scanner(System.in);
         int t = scan.nextInt();
         for (int i = 0; i < t; i++) {

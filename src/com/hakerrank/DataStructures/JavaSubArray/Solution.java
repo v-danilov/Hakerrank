@@ -1,7 +1,6 @@
 package com.hakerrank.DataStructures.JavaSubArray;
 
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -10,18 +9,18 @@ public class Solution {
         int size = sc.nextInt();
         int[] arr = new int[size];
         int neg = 0;
-        for(int i = 0;  i < size; i++){
+        for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
-            if(arr[i] < 0){
+            if (arr[i] < 0) {
                 neg++;
             }
         }
 
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             int tmp = arr[i];
-            for(int j = i + 1; j < size; j++ ){
+            for (int j = i + 1; j < size; j++) {
                 tmp += arr[j];
-                if(tmp < 0){
+                if (tmp < 0) {
                     neg++;
                 }
             }

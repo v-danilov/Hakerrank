@@ -1,10 +1,7 @@
 package com.hakerrank.BigNumber.JavaPrimalityTest;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.math.BigInteger;
+import java.util.Scanner;
 
 public class Solution {
 

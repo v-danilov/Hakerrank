@@ -1,11 +1,7 @@
 package com.hakerrank.BigNumber.JavaBigDecimal;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class Solution {
 

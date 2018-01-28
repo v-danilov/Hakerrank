@@ -1,10 +1,6 @@
 package com.hakerrank.DataStructures.Java1DArray2;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {

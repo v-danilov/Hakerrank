@@ -1,6 +1,8 @@
 package com.hakerrank.DataStructures.Java2DArray;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -16,7 +18,7 @@ public class Solution {
                 game[i] = scan.nextInt();
             }
 
-            System.out.println( (canWin(leap, game)) ? "YES" : "NO" );
+            System.out.println((canWin(leap, game)) ? "YES" : "NO");
         }
         scan.close();
     }

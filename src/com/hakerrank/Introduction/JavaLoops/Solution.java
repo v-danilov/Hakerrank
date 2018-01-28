@@ -1,10 +1,6 @@
 package com.hakerrank.Introduction.JavaLoops;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -12,8 +8,8 @@ public class Solution {
         Scanner in = new Scanner(System.in);
         int N = in.nextInt();
 
-        for(int i = 1; i <= 10; i++ ){
-            System.out.println(N + " x " + i + " = " + (N*i));
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(N + " x " + i + " = " + (N * i));
         }
     }
 }

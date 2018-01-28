@@ -1,10 +1,7 @@
 package com.hakerrank.Advances.CanYouAccess;
 
-import java.io.*;
-import java.lang.reflect.*;
-import java.util.*;
-import java.util.regex.*;
-import java.security.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 
 public class Solution {
@@ -12,7 +9,7 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         DoNotTerminate.forbidExit();
 
-        try{
+        try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             int num = Integer.parseInt(br.readLine().trim());
             Object o;// Must be used to hold the reference of the instance of the class Solution.Inner.Private
@@ -27,10 +24,11 @@ public class Solution {
             System.out.println("Unsuccessful Termination!!");
         }
     }//end of main
-    static class Inner{
-        private class Private{
-            private String powerof2(int num){
-                return ((num&num-1)==0)?"power of 2":"not a power of 2";
+
+    static class Inner {
+        private class Private {
+            private String powerof2(int num) {
+                return ((num & num - 1) == 0) ? "power of 2" : "not a power of 2";
             }
         }
     }//end of Inner

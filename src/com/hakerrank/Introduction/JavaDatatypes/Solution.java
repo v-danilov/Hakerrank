@@ -1,27 +1,21 @@
 package com.hakerrank.Introduction.JavaDatatypes;
 
-import java.util.*;
+import java.util.Scanner;
 
 
-
-
-class Solution{
-    public static void main(String []argh)
-    {
-
+class Solution {
+    public static void main(String[] argh) {
 
 
         Scanner sc = new Scanner(System.in);
-        int t=sc.nextInt();
+        int t = sc.nextInt();
 
-        for(int i=0;i<t;i++)
-        {
+        for (int i = 0; i < t; i++) {
 
-            try
-            {
-                long x=sc.nextLong();
-                System.out.println(x+" can be fitted in:");
-                if(x>=-128 && x<=127)System.out.println("* byte");
+            try {
+                long x = sc.nextLong();
+                System.out.println(x + " can be fitted in:");
+                if (x >= -128 && x <= 127) System.out.println("* byte");
 
                 if (x >= Short.MIN_VALUE && x <= Short.MAX_VALUE) {
                     System.out.println("* short");
@@ -30,10 +24,8 @@ class Solution{
                     System.out.println("* int");
                 }
                 System.out.println("* long");
-            }
-            catch(Exception e)
-            {
-                System.out.println(sc.next()+" can't be fitted anywhere.");
+            } catch (Exception e) {
+                System.out.println(sc.next() + " can't be fitted anywhere.");
             }
 
         }

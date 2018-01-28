@@ -1,7 +1,8 @@
 package com.hakerrank.DataStructures.JavaArraylist;
 
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -11,10 +12,10 @@ public class Solution {
 
         int quantity = sc.nextInt();
 
-        for(int i = 0; i < quantity; i++){
-            int length =  sc.nextInt();
+        for (int i = 0; i < quantity; i++) {
+            int length = sc.nextInt();
             ArrayList<Integer> valuesList = new ArrayList<Integer>();
-            for(int j = 0; j < length; j++){
+            for (int j = 0; j < length; j++) {
                 valuesList.add(sc.nextInt());
             }
             list.add(valuesList);
@@ -22,14 +23,13 @@ public class Solution {
 
         int queries = sc.nextInt();
 
-        for(int i = 0; i < queries; i++){
-            try{
+        for (int i = 0; i < queries; i++) {
+            try {
                 //System.out.println(sc.nextInt());
                 //System.out.println(sc.nextInt());
 
                 System.out.println(list.get(sc.nextInt() - 1).get(sc.nextInt() - 1));
-            }
-            catch(Exception e){
+            } catch (Exception e) {
                 System.out.println("ERROR!");
             }
         }

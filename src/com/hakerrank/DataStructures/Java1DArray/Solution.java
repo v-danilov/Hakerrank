@@ -1,6 +1,6 @@
 package com.hakerrank.DataStructures.Java1DArray;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -10,7 +10,7 @@ public class Solution {
         int n = scan.nextInt();
         int[] a = new int[n];
 
-        for(int i = 0 ; i < n; i++){
+        for (int i = 0; i < n; i++) {
             int val = scan.nextInt();
             a[i] = val;
         }

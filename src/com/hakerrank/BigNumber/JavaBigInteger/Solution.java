@@ -1,20 +1,23 @@
 package com.hakerrank.BigNumber.JavaBigInteger;
 
 import java.math.BigDecimal;
-import java.util.*;
-class Solution{
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Scanner;
 
-    public static void main(String []args){
+class Solution {
+
+    public static void main(String[] args) {
         //Input
-        Scanner sc= new Scanner(System.in);
-        int n=sc.nextInt();
-        String []s=new String[n+2];
-        for(int i=0;i<n;i++){
-            s[i]=sc.next();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String[] s = new String[n + 2];
+        for (int i = 0; i < n; i++) {
+            s[i] = sc.next();
         }
         sc.close();
 
-        Comparator<String> compar= new Comparator<String>() {
+        Comparator<String> compar = new Comparator<String>() {
             @Override
             public int compare(String s1, String s2) {
                 BigDecimal a = new BigDecimal(s1);
@@ -25,8 +28,7 @@ class Solution{
 
         Arrays.sort(s, 0, n, compar);
 
-        for(int i=0;i<n;i++)
-        {
+        for (int i = 0; i < n; i++) {
             System.out.println(s[i]);
         }
     }

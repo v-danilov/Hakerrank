@@ -1,7 +1,7 @@
 package com.hakerrank.Introduction.JavaIntToString;
 
-import java.util.*;
-import java.security.*;
+import java.util.Scanner;
+
 public class Solution {
     public static void main(String[] args) {
 
@@ -9,7 +9,7 @@ public class Solution {
 
         try {
             Scanner in = new Scanner(System.in);
-            int n = in .nextInt();
+            int n = in.nextInt();
             in.close();
             String s = "" + n;
             if (n == Integer.parseInt(s)) {

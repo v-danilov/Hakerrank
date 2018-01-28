@@ -1,7 +1,6 @@
 package com.hakerrank.Strings.JavaStringTokens;
 
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -10,7 +9,7 @@ public class Solution {
         String s = scan.nextLine();
 
         s = s.trim();
-        if(s.isEmpty()){
+        if (s.isEmpty()) {
             System.out.println(0);
             return;
         }
@@ -18,7 +17,7 @@ public class Solution {
 
         String[] strings = s.split("[^a-zA-Z]+");
         System.out.println(strings.length);
-        for(String str : strings){
+        for (String str : strings) {
             System.out.println(str);
         }
         scan.close();

@@ -1,11 +1,7 @@
 package com.hakerrank.Advances.JavaSHA256;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-import java.security.*;
+import java.security.MessageDigest;
+import java.util.Scanner;
 
 public class Solution {
 

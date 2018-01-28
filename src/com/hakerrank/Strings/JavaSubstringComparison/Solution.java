@@ -1,11 +1,9 @@
 package com.hakerrank.Strings.JavaSubstringComparison;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -13,9 +11,9 @@ public class Solution {
         String smallest = "";
         String largest = "";
 
-        List<String> list=new ArrayList<String>();
-        for(int i=0;i<=s.length()-k;i++){
-            list.add(s.substring(i,i+k));
+        List<String> list = new ArrayList<String>();
+        for (int i = 0; i <= s.length() - k; i++) {
+            list.add(s.substring(i, i + k));
         }
         Collections.sort(list);
 

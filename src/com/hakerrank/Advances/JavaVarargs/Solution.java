@@ -1,8 +1,8 @@
 package com.hakerrank.Advances.JavaVarargs;
 
 public class Solution {
-    class Add{
-        void add(int ... nums){
+    class Add {
+        void add(int... nums) {
             StringBuffer sb = new StringBuffer();
             int sum = 0;
             for (int num : nums) {

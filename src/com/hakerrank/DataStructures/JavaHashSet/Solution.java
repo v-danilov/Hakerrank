@@ -1,10 +1,7 @@
 package com.hakerrank.DataStructures.JavaHashSet;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.HashSet;
+import java.util.Scanner;
 
 public class Solution {
 
